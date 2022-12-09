@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  height: 3.5em;
+}
+
+body {
+  background: white;
+  margin: 0;
+  width: 100%;
+}
+
+header:first-of-type {
+  border-bottom: solid 1px rgb(240, 240, 240);
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  justify-content: space-between;
+  font-family: yrsa, serif;
+}
+
+svg {
+  width: 30px;
+}
+
+header:last-of-type {
+  border-bottom: solid 1px rgb(240, 240, 240);
+  background: rgb(240, 240, 240);
+  font-family: yrsa, serif;
+}
+
+.vergrootglas {
+  height: 4.5em;
+  width: 4.5em;
+  margin-left: 0.5em;
+  padding-left: 1.2em;
+  padding-right: 1em;
+}
+
+.zoekbalk {
+  display: flex;
+  align-items: center;
+
+}
+
+.text-zoekbalk {
+  border-style: none;
+  width: 105em;
+  background: rgb(240, 240, 240);
+}
+
+.text-zoekbalk:focus-visible {
+  outline-style: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 1fr;
+  grid-gap: 10px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-item {
+
+  background: rgb(225, 225, 225)
+}
+
+.grid-item:hover {
+  cursor: pointer;
+
+}
+
+.afbeelding {
+  height: 18.5em;
+  width: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+}
+
+.dropbtn {
+
+  font-family: rigid-square, sans-serif;
+
+  font-size: 1em;
+
+  font-weight: 800;
+
+  padding: 0.75rem 1rem;
+
+  border: none;
+
+  color: #090940;
+
+  background-size: 400%;
+
+  transition: 0.2s ease-in;
+
+  width: 79.5%;
+
+  margin-left: 3.2em;
+
+
+}
+
+
+
+.dropbtn {
+
+  background-image: linear-gradient(90deg, #FEB51E 50%, #090940 50%);
+
+}
+
+
+
+.dropbtn:hover {
+
+  background-position: right center;
+
+  transform: scale(1.05);
+
+  opacity: 0.9;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 83.5%;
+  margin-left: 2.6em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #feb51e;
+
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+
+
+}
+
+a {
+
+  font-family: yrsa;
+}
